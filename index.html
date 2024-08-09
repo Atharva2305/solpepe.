@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> SOLPEPE COIN</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="CryptoStyles.css">
+</head>
+<body class="body-size">
+    <!-- pre loader -->
+    <div class="pre-loader" style="display: none;">
+        <div class="status" style="display: none;">
+            <div class="status-msg"></div>
+        </div>
+    </div>
+    <!-- fixed navigation bar -->
+     <div class="nav-bar">
+        <div class="nav-container">
+            <div class="nav-logo nav-flex">
+                <img src="./CryptoPic/SolpepeCoin2.png" class="logo-size" width="80px" height="80px">
+                <h2>SOLPEPE</h2>
+            </div>
+            <div class="nav-links">
+                <div class="link-lists">
+                    <ul>
+                        <li><a href="#"> About </a></li>
+                        <li><a href="#"> Roadmap </a></li>
+                        <li><a href="#"> Tokenomics</a></li>
+                        <li><a href="#"> How To Buy </a></li>
+                        <li><a href="#"> FAQ </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+     </div>
+       <div class="hero-page">  
+         
+        <div class="hero-coin">
+            <div class="coin-photo-detail" data-aos="slide-right">
+                <div class="img" style="background-image: url('CryptoPic/SolpepeCoin2.png')"></div>
+                <div class="coin-small-detail">
+                    <h1 id="name"> SOLPEPE </h1>
+                    <p id="coin-msg">The most memeable memecoin in existence.<br>The dogs and frogs have had their day,<br>it’s time for Solpepe to take reign.<br>BEP20 Contract Address: <br>0x1bb6a4A7053014B599dDd369c068ed8044096F40</p>
+                    <div class="whitepaper">
+                        <button id="whitepaper-button"> WHITEPAPER </button>
+                    </div>
+                </div>
+            </div>
+            <div class="coin-airdrop-outer" data-aos="fade-left">
+                <div class="coin-airdrop">
+                    <h1 id="name"> SOLPEPE </h1>
+                    <div class="coin-buttons">
+                        <button id="airdrop"> AIRDROP </button>
+                        <button id="TTE"> TAP TO EARN </button>
+                    </div>
+                    <h4 id="time-msg"> UNTIL NEXT ROUND </h4>
+                    <div class="counter">
+                        <div class="box">
+                            <span id="days"></span>
+                            <p>Days</p>
+                        </div>
+                        <div class="box">
+                            <span id="hours"></span>
+                            <p>Hours</p>
+                        </div>
+                        <div class="box">
+                            <span id="minutes"></span>
+                            <p>Minutes</p>
+                        </div>
+                        <div class="box">
+                            <span id="seconds"></span>
+                            <p>Seconds</p>
+                        </div>
+                    </div>
+                    <div id="listing-value"> Listing Price: 1 $SOLPEPE = $0.005 </div>
+                    <div id="user-purchase"> Your Purchase: 0 SOLPEPE </div>
+                    <hr>
+                    <div id="coin-value"> 1 SOLPEPE = $0.00135 </div>
+                    <div class="coin-exchange"> BNB You Pay: 
+                        <input type="text" placeholder="0.1" id="insert-bnb-value">
+                    </div>
+                    <div class="connect-wallet">
+                        <button id="connect-wallet-button"> Connect Wallet </button>
+                    </div>
+                    <hr>
+                    <h2 id="refferal-reward-title"> Refferal Rewards </h2>
+                    <div class="user-bep20-address">
+                        Your BEP20 Address:
+                        <input type="text" placeholder="..." id="input">
+                    </div>
+                    <div class="refferal-link">
+                        <button id="refferal-link-button"> Get Refferal Link </button>
+                    </div>
+                    <p id="refferal-link-msg"> Enjoy 10% of purchased Tokens! </p>
+                </div>
+            </div>
+        </div>
+        <div class="whitepaper-mobile">
+            BEP20 Contract Address: <br>0x1bb6a4A7053014B599dDd369c068ed8044096F40
+            <div class="whitepaper-button-outer">
+                <button id="whitepaper-button-mobile"> WHITEPAPER </button>
+            </div>
+        </div>
+        <div class="coin-description" data-aos="flip-down">
+            <h2 id="description-title" class="title-underline"> ABOUT </h2>
+            <div class="coin-about">
+                <div class="about-msg">
+                    pepecoin on SOL is a meme coin inspired by the success of pepe the frog, 
+                    the famous meme which took crypto community by storm in 2023 through its success on Ethereum blockchain,
+                    offering a fun and engaging investment opportunity for the crypto community. 
+                    By blending the viral appeal of meme culture with innovative blockchain technology, 
+                    SOLPEPE hopes to create a unique niche in the world of digital currencies.
+                </div>
+                <div class="about-img-outer">
+                    <div class="about-img img" style="background-image: url('CryptoPic/SolpepeCoin2.png')"></div>
+                </div>
+            </div>
+        </div>
+        <div class="buy-process" data-aos="fade-up">
+            <h2 id="buy-process-title" class="title-underline"> How To Buy? </h2>
+            <div class="buy-process-steps">
+                <div class="steps">
+                    <div id="container">
+                        <div id="number-container">
+                            <div id="step-number">
+                                <h3 id="number">1</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <h3> Connect Wallet </h3>
+                    Find the presale widget at the top of this web page and connect your preferred wallet.
+                </div>
+                <div class="steps">
+                    <div id="container">
+                        <div id="number-container">
+                            <div id="step-number">
+                                <h3 id="number">2</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <h3> Select Binance Smart Chain </h3>
+                    Once connected, you can participate in the presale on Binance Smart Chain.
+                </div>
+                <div class="steps">
+                    <div id="container">
+                        <div id="number-container">
+                            <div id="step-number">
+                                <h3 id="number">3</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <h3> Buy Tokens </h3>
+                    Enter the amount of BNB you wish to swap for $SOLPEPE and confirm the transaction in your wallet.
+                </div>
+            </div>
+        </div>
+        <div class="tokenomics" data-aos="fade-up">
+            <h2 id="tokenomics-title" class="title-underline"> TOKENOMICS </h2>
+            <h2 id="tokenomics-msg"> Total supply <br> 100,000,000,000 </h2>
+            <div class="tokenomics-img-container">
+                <div class="tokenomics-img" style="background-image: url('CryptoPic/tokenomics-img.png')"></div>
+            </div>
+        </div>
+        <div class="hero-roadmap" data-aos="fade-up">
+            <h2 id="roadmap-title" class="title-underline"> 
+                ROADMAP
+            </h2>
+            <div class="roadmap-phases">
+                <div class="phase">
+                    <div class=" roadmap roadmap-color">
+                        <span></span>
+                        <h4> PHASE 1 </h4>
+                        <P> Launch </P>
+                        <p> Listing on Panecakeswap </p>
+                        <p> 1,000+ holders </p>
+                        <p> Solpepe community </p>
+                        <p> takeover </p>
+                    </div>
+                </div>
+                <div class="phase">
+                    <div class="roadmap">
+                        <span></span>
+                        <h4> PHASE 2 </h4>
+                        <P> CEX Listing </P>
+                        <p> $SOLPEPE normie </p>
+                        <p> takover </p>
+                        <p> strategic partnerdhip </p>
+                        <p> 10,000+ holders </p>
+                    </div>
+                </div>
+                <div class="phase">
+                    <div class="roadmap">
+                        <span></span>
+                        <h4> PHASE 3 </h4>
+                        <P> Tier 1 exchange listing </P>
+                        <p> Solpepe's official merch </p>
+                        <p> 50,000+ holders </p>
+                    </div>
+                </div>
+                <div class="phase">
+                    <div class="roadmap">
+                        <span></span>
+                        <h4> PHASE 4 </h4>
+                        <P> Solpepe's NFT collection </P>
+                        <p> 100,000+ holders </p>
+                        <p> $SOLPEPE world </p>
+                        <p> domination </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="Featured-container" data-aos="fade-up">
+            <h2 id="featured-title" class="title-underline">  FEATURED IN </h2>
+            <div class="row">
+                <div class="inner-row wrapper-styling">
+                    <div class="item-wrapper-outer wrapper-styling">
+                        <div class="item-wrapper wrapper-styling roll">
+                            <div id="item1 item">
+                                <a href="#" id="item-a">
+                                    <img src="CryptoPic/cointelegraph.svg" >
+                                </a>
+                            </div>
+                            <div id="item2 item">
+                                <a href="#" id="item-a">
+                                    <img src="CryptoPic/techopedia-.svg">
+                                </a>
+                            </div>
+                            <div id="item3 item">
+                                <a href="#" id="item-a">
+                                    <img src="CryptoPic/bitcoinst.svg">
+                                </a>
+                            </div>
+                            <div id="item4 item">
+                                <a href="#" id="item-a">
+                                    <img src="CryptoPic/cryptonews.svg">
+                                </a>
+                            </div>
+                            <div id="item5 item">
+                                <a href="#" id="item-a">
+                                    <img src="CryptoPic/cointelegraph.svg">
+                                </a>
+                            </div>
+                            <div id="item6 item">
+                                <a href="#" id="item-a">
+                                    <img src="CryptoPic/techopedia-.svg">
+                                </a>
+                            </div>
+                            <div id="item7 item">
+                                <a href="#" id="item-a">
+                                    <img src="CryptoPic/bitcoinst.svg">
+                                </a>
+                            </div>
+                            <div id="item8 item">
+                                <a href="#" id="item-a">
+                                    <img src="CryptoPic/cryptonews.svg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="questions-container" data-aos="fade-up">
+            <h2 id="questions-title" class="title-underline"> FREQUENTLY ASKED QUESTIONS </h2>
+            <div class="que1 dropdown">
+                <button onclick="toggleDropdown1()">What is Solpepe</button>
+                <div id="DropdownContent1" class="dropdown-content">
+                    <div id="dropdown-sentence">
+                        <div id="line">This is the dropdown sentence that drops down when clicked or tapped.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="que1 dropdown">
+                <button onclick="toggleDropdown()">What is Solpepe</button>
+                <div id="DropdownContent2" class="dropdown-content">
+                    <div id="dropdown-sentence">
+                        <div id="line">This is the dropdown sentence that drops down when clicked or tapped.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="que1 dropdown">
+                <button onclick="toggleDropdown()">What is Solpepe</button>
+                <div id="DropdownContent3" class="dropdown-content">
+                    <div id="dropdown-sentence">
+                        <div id="line">This is the dropdown sentence that drops down when clicked or tapped.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="que1 dropdown">
+                <button onclick="toggleDropdown()">What is Solpepe</button>
+                <div id="DropdownContent4" class="dropdown-content">
+                    <div id="dropdown-sentence">
+                        <div id="line">This is the dropdown sentence that drops down when clicked or tapped.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>
+     <!-- hii -->
+     <!-- START FOOTER -->
+   
+
+
+     <footer class="footer" >
+        <div class="contener flex footer-num">
+            
+        <div class="footer-logo">
+            <img src="./CryptoPic/SolpepeCoin2.png" class="logo-size" width="60px" height="60px">
+            <h2 id="footer-logo"> SOLPEPE </h2>
+            
+        </div>
+
+            <div class="footer-item flex">
+                <h4>service</h4>
+                <a href="#" class="footer-list">overview</a>
+                <a href="#" class="footer-list">licesen</a>
+                <a href="#" class="footer-list">coin description</a>
+                <a href="#" class="footer-list">owner contact </a>
+                <a href="#" class="footer-list"> owner Email</a>
+            </div>
+            <div class="footer-item flex">
+                <h4>payment issue</h4>
+                <a href="#" class="footer-list">coin exchange</a>
+                <a href="#" class="footer-list">pricing</a>
+                <a href="#" class="footer-list">Usability</a>
+                <a href="#" class="footer-list">customer pages</a>
+                <a href="#" class="footer-list"> 24/7 service</a>
+            </div>
+            <div class="footer-item flex">
+                <h4>help line</h4>
+                <a href="#" class="footer-list">contact</a>
+                <a href="#" class="footer-list">Email</a>
+                <a href="#" class="footer-list">instagram</a>
+                <a href="#" class="footer-list">X</a>
+                <a href="#" class="footer-list"> facebook</a>
+            </div>
+        </div>
+          <hr>
+        <div class="footer-copyright">© 2024 Solpepe. All Rights Reserved.</div>
+     </div> 
+    </footer>
+
+
+    <!-- END FOOTER -->		
+
+    <script>
+        var timer;
+        var compareDate = new Date();
+        compareDate.setDate(compareDate.getDate() + 7);
+    
+        timer = setInterval(function () {
+            timeBetweenDates(compareDate);
+        }, 1000);
+    
+        function timeBetweenDates(toDate) {
+            var dateEntered = toDate;
+            var now = new Date();
+            var difference = dateEntered.getTime() - now.getTime();
+    
+            if (difference <= 0) {
+                clearInterval(timer);
+            } else {
+    
+                var seconds = Math.floor(difference / 1000);
+                var minutes = Math.floor(seconds / 60);
+                var hours = Math.floor(minutes / 60);
+                var days = Math.floor(hours / 24);
+    
+                hours %= 24;
+                minutes %= 60;
+                seconds %= 60;
+    
+                document.getElementById("days").innerHTML = days;
+                document.getElementById("hours").innerHTML = hours;
+                document.getElementById("minutes").innerHTML = minutes;
+                document.getElementById("seconds").innerHTML = seconds;
+            }
+        }
+    </script>
+
+
+     <script src="Script.js"></script>
+     <script src="jquary.js"></script>
+     <script src="count.js"></script>
+     <script src="leanmodel.js"></script>
+     <script src="magnifi.js"></script>
+     <script src="nav.js"></script>
+     <script src="slicknav.js"></script>
+     <script src="jquary2.js"></script>
+     <script src="model1.js"></script>
+     <script src="web3.js"></script>
+     <script src="partical.js"></script>
+     <script src="script2.js"></script>
+     <script src="scrolltop.js"></script>
+     <script src="scroll.js"></script>
+     <script src="nwe.js"></script>
+     <script src="simple.js"></script>
+     <script src="browerexter.js"></script>
+     <script src="index1.js"></script>
+     <script src="index2.js"></script>
+     <script src="index3.js"></script>
+     <script src="index4.js"></script>
+     <script src="index5.js"></script>
+
+
+     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+     <script>
+       AOS.init({
+             offset: 250,
+             duration: 400,
+       });
+     </script>
+
+
+</body>
+</html>

@@ -1,0 +1,719 @@
+*, :after, :before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    border: boder-box;
+    /* scroll-behavior: smooth; */
+    
+}
+::selection{
+    background-color: #3bf832;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.title-underline:after{
+    content: "";
+    display: block;
+    background: #c62a88;
+    width: 60px;
+    height: 2px;
+    margin: 15px auto auto;
+}
+
+/* navigation bar */
+ .nav-bar{
+    padding: 2px 0;
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 5px 12px;
+    
+}
+.nav-container{
+    display: flex;
+    justify-content:space-around;
+}
+h1, h2, h3, h4{
+    font-family: 'Mesmerize';
+    text-align: center;
+    align-items: center;
+    color: white;
+}
+.nav-flex{
+    display: flex;
+    align-items: center;
+}
+.link-lists ul{
+    margin-top: 30px;
+    align-items: center;
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+.link-lists li{
+    align-items: center;
+    /* display: inline; */
+    
+    margin-right: 10px;
+}
+.link-lists a{
+    align-items: center;
+    text-align: center;
+    font-size: 1.15rem;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+a:hover{
+    color: #000000;
+}
+/* body */
+body{
+    /* background-color: #76e574; */
+    /* background-image: url('CryptoPic/BodyImg.jpg') ; */
+    background-image: linear-gradient(to bottom, #2dd197, #1fda91, #17e388, #1cec7e, #2af471, #36f668, #42f85d, #4aed93, #41ee89, #3ae380, #33ed87, #1dd972);
+    /* background-image: linear-gradient(to right top, #4ee025, #4ae03e, #48e050, #47e060, #48df6e, #50e26f, #57e470, #5ee771, #6dee64, #7df454, #8efa41, #a1ff25); */
+    background-size: cover;
+    overflow-x: hidden;
+   
+    
+}
+.hero-page{
+    margin: 0 100px;
+}
+.hero-coin{
+    display: flex;
+    align-items: center;
+    min-height: 75vh;
+    justify-content: space-evenly;
+}
+.coin-photo-detail{
+    width: 40%;
+}
+#coin-msg{
+    color: white;
+    font-size: large;
+    letter-spacing: 0.5px;
+
+}
+.coin-small-detail{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.img{
+    height: 475px;
+    width: 475px;
+    border-radius: 50%;
+    background-size: cover;
+    /* margin-top: 100px; */
+    webkit-animation: bounce 8s infinite ease-in-out; 
+    animation: bounce 8s infinite ease-in-out;
+    
+    
+}
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+    }
+    40% {
+        -webkit-transform: translateY(-30px);
+        -ms-transform: translateY(-30px);
+        transform: translateY(-30px);
+    }
+    60% {
+        -webkit-transform: translateY(-15px);
+        -ms-transform: translateY(-15px);
+        transform: translateY(-15px);
+    }
+}
+/* .coin-airdrop-outer{
+    display: none;
+} */
+.coin-airdrop{
+    width: 100%;
+    height: 850px;
+    padding: 25px;
+    margin: 50px 5px;
+    border: 2px solid white;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #57ffbc9e, #88eb7db5), #20f47900;
+    /* background-color: rgba(64, 253, 162, 0.473); */
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+#name{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 15px 0px;
+    padding-bottom: 20px;
+    font-size: 3.25rem;
+    /* background: linear-gradient(92deg,#00fe99 1.73%,#11cbffe8 99.52%); */
+    background: linear-gradient(92deg,#ff435f 1.73%,#2793ffe8 99.52%);
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 6px transparent;
+}
+.coin-buttons{
+    justify-content: space-evenly;
+    display: flex;
+    align-items: center;
+}
+button{
+    margin: 10px 0;
+    padding: 14px 40px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    background-color: #33b078;
+    color: white;
+    border: 2px solid rgba(255, 255, 255, 0);
+    border-radius: 25px;
+}
+button:hover{
+    border: 2px solid white;
+    color: #000000;
+    background-color: #0eb064;
+    
+    
+}
+#time-msg{
+    margin: 20px 0;
+    text-align: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+.counter{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* color: white; */
+}
+#days, #hours, #minutes, #seconds{
+    margin: 10px 0;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 400;
+}
+#listing-value{
+    background-color: rgb(231, 231, 231);
+    text-align: center;
+    font-size: 1.rem;
+    border-radius: 10px;
+    padding: 2px;
+    margin: 10px 0;
+}
+#user-purchase, #coin-value{
+    text-align: center;
+    color: white;
+    font-size: 1rem;
+    margin: 20px 0;
+}
+.coin-exchange, .user-bep20-address{
+    display: block;
+}
+#insert-bnb-value, #input{
+    width: 100%;
+    display: block;
+    background-color: rgb(231, 231, 231);
+    border: none;
+    border-radius: 10px;
+    font-size: 1.35rem;
+    padding: 5px;
+    margin: 5px 0;
+}
+.connect-wallet, .refferal-link{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+#connect-wallet-button, #refferal-link-button{
+    text-align: center;
+    padding: 10px 20px;
+}
+#refferal-reward-title{
+    margin: 15px 0;
+}
+#refferal-link-msg{
+    text-align: center;
+}
+.whitepaper{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+#whitepaper-button{
+    text-align: center;
+    background-color: #33b078;
+    color: white;
+    
+}
+#whitepaper-button:hover{
+    background-color: rgb(129, 253, 146);
+    color: #000000;
+}
+/* whitepaper for mobile */
+.whitepaper-mobile, .whitepaper-button-outer, #whitepaper-button-mobile{
+    display: none;
+}
+/* coin description */
+.coin-description{
+    padding: 50px 0;
+}
+
+.coin-about{
+  
+    display: flex;
+    justify-content: space-evenly;
+}
+.about-msg{
+    margin: 0 60px;
+    margin-top: 60px;
+    padding-top: 50px;
+    width: 40%;
+    color: white;
+    font-size:large;
+    letter-spacing: 0.5px;
+}
+.about-img{
+   background-size: 350px;
+   background-repeat: no-repeat;
+   margin-top: 50px;
+}
+/* buy process */
+.buy-process{
+    margin-top: -200px;
+}
+#buy-process-title{
+    margin: 50px 10px;
+}
+.buy-process-steps{
+    display: flex;
+    justify-content: space-evenly;
+}
+.steps{
+    width: 22%;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-weight: 300;
+    line-height: 1.75;
+}
+.steps h3{
+    font-size: 1.85rem;
+    font-weight: bold;
+}
+#container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#number-container{
+    height: 90px;
+    width: 90px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5325c33;
+    border-radius: 50%;
+}
+#step-number{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: #c62a88;
+    align-items: center;
+}
+/* tokenomics */
+.tokenomics{
+    justify-content: center;
+    text-align: center;
+    margin: 130px 0;
+}
+#tokenomics-title, #tokenomics-msg{
+    margin: 50px 0;
+}
+.tokenomics-img-container{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: -40px;
+    height: 450px;
+}
+.tokenomics-img{
+    height: 400px;
+    width: 500px;
+    background-size: cover;
+}
+/* roadmap */
+
+.hero-roadmap{
+    margin-top: -20px;
+    width: 100%;
+    height: 450px;
+    
+}
+#roadmap-title{
+    margin: 60px 50px;
+
+}
+
+.roadmap-phases{
+    text-align: center;
+    display: flex;
+    width: 1496px; 
+    left: 0px; 
+    display: block; 
+    transition: all; 
+    transform: translate3d(0px, 0px, 0px);
+}
+.phase{
+    float: left;
+    width: 190px;
+    color: white;
+    margin-right: 100px;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    line-height: 1.75;
+}
+.roadmap:before{
+    content: "";
+    background: #ddd;
+    display: block;
+    height: 3px;
+    margin: 20px 0;
+}
+.roadmap-color:before{
+    content: "";
+    background: #c62a88;
+    display: block;
+    height: 3px;
+    margin: 20px 0;
+}
+.roadmap span{
+    border: 3px solid #c62a88;
+    width: 20px;
+    height: 20px;
+    border-radius: 30px;
+    display: block;
+    background: #fff;
+    position: absolute;
+    top: 12px;
+    left: 44%;
+}
+/*  featured in */
+.Featured-container{
+    margin-top: -15px 0;
+}
+#featured-title{
+    margin: 80px 0;
+}
+.row{
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    /* margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-.5 * var(--bs-gutter-x));
+    margin-left: calc(-.5 * var(--bs-gutter-x)); */
+}
+.wrapper-styling{
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translate3d(0,0,0);
+}
+.inner-row{
+    opacity: 1;
+    display: block;
+    position: relative;
+    width: 100%;
+}
+.item-wrapper-outer{
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+.item-wrapper{
+    width: 1000px; 
+    left: 0px; 
+    display: flex; 
+    gap:40px;
+    /* transition: 800ms; 
+    transform: translate 3d(-320px, 0px, 0px); */
+}
+#item{
+    width: 350px;
+    
+}
+ #item-a{
+    font-family: Poppins,sans-serif;
+    text-decoration: none;
+    -webkit-transition: all .2s ease 0s;
+    transition: all .2s ease 0s;
+}
+@keyframes item-a {
+    from{
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+    
+}
+.roll{
+    animation: 17s item-a infinite linear ;
+}
+/*  
+@media screen and (min-width: 576px){
+    #item-a img{
+        width: 150px;
+    }
+} */
+/* Frequently asked ques */
+.questions-container{
+    height: 500px;
+    margin: 100px 0;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    margin: 20px 0;
+    text-align: center;
+}
+.dropdown button{
+    width: 80%;
+    border-radius: 10px;
+    margin: 0;
+}
+
+.dropdown-content {
+    display: none;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    margin-bottom: 50px;
+}
+#dropdown-sentence{
+    width: 100%;
+    /* margin-bottom: 20px; */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+#line{
+    text-align: center;
+    width: 80%;
+    padding: 15px;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: #000000;
+    color: white;
+}
+/* footer */
+
+
+.footer-item{
+    flex-direction: column;
+    gap: 15px;
+    padding: 40px;
+}
+.footer{
+    background-color:#063f19 ;
+}
+.footer-num{
+    align-items: flex-start;
+    justify-content: space-between;
+    
+}
+.footer-list{
+    
+color: #e2e9e1;
+}
+ a{
+    text-decoration: none;
+}
+.footer-list:hover{
+    color: #48e050;
+}
+h4{
+    font-size: 130%;
+   
+}
+.footer-logo{
+    display: flex;
+    align-items: center;
+    margin-top: 1%;
+    margin-left: 5%;
+    
+}
+.flex{
+    display: flex;
+}
+.footer-copyright{
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+
+
+@media only screen and (max-width: 900px){
+    body{
+        /* height: 150vh; */
+        width: 100vh;
+    }
+    .nav-bar{
+        height: 170px;
+        font-size: 3.85rem;
+    }
+    .link-lists a{
+        font-size: 2rem;
+    }
+    .hero-coin{
+        display: block;
+        justify-content: center;
+    }
+    .img{
+        height: 600px;
+        width: 600px;
+    }
+    .coin-photo-detail{
+        width: 100%;
+        justify-content: center;
+        display: flex;
+    }
+    .coin-airdrop-outer{
+        display: flex;
+        justify-content: center;
+    }
+    .coin-airdrop{
+        width: 90%;
+        height: 1600px;
+        justify-content: center;
+        border: 6px solid white;
+        border-radius: 25px;
+        font-size: 2.5rem;
+    }
+    #name{
+        font-size: 7rem;
+        font-weight: 700;
+        text-shadow: 0px 4px 8px rgba(0, 0, 0, .5);
+    }
+    button{
+        font-size: 2rem;
+        font-weight: bolder;
+        margin: 20px 0;
+        padding: 30px 80px;
+        border-radius: 50px;
+    }
+    #time-msg{
+        font-weight: bold;
+        font-size: 4.5rem;
+    }
+    #days, #hours, #minutes, #seconds{
+        margin: 10px 10px;
+        text-align: center;
+        font-size: 10rem;
+        font-weight: bold;
+    }
+    .time{
+        margin-bottom: 40px;
+        text-align: center;
+        color: white;
+        font-weight: 600;
+    }
+    #user-purchase, #coin-value{
+        font-size: 2rem;
+        font-weight: 500;
+        margin: 20px 0;
+    }
+    .coin-small-detail{
+        display: none;
+    }
+    .whitepaper-mobile{
+        display: block;
+        justify-content: center;
+        text-align: center;
+        color: white;
+        margin: 50px 0;
+        font-size: 2rem;
+        font-weight: 400;
+    }
+    .whitepaper-button-outer{
+        display: flex;
+        justify-content: center;
+    }
+    #whitepaper-button-mobile{
+        display: block;
+        background-color: rgb(255, 0, 102);
+        font-size: 1.85rem;
+        font-weight: 500;
+        margin: 20px 0;
+    }
+    .title-underline{
+        font-size: 2.5rem;
+    }
+    .coin-about{
+        display: block;
+        justify-content: center;
+        text-align: center;
+    }
+    .about-msg{
+        width: 100%;
+        padding:  0 40px;
+        line-height: 1.5;
+        font-size: 1.75rem;
+        font-weight: 400;
+    }
+    .about-img-outer{
+        display: flex;
+        justify-content: center;
+    }
+    .buy-process-steps{
+        display: block;
+        justify-content: center;
+    }
+    .steps{
+        width: 100%;
+        padding: 30px;
+        font-size: 2.5rem;
+    }
+    #number-container{
+        width: 250px;
+        height: 250px;
+    }
+    #step-number{
+        width: 150px;
+        height: 150px;
+    }
+    #number{
+        font-size: 5rem;
+    }
+    #tokenomics-msg{
+        font-size: 2.5rem;
+    }
+    .tokenomics-img-container{
+        height: 800px;
+    }
+    .tokenomics-img{
+        margin: 50px 0;
+        height: 750px;
+        width: 900px;
+    }
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background-color: #33ed87;
+}
+::-webkit-scrollbar-thumb{
+    /* background-color: linear-gradient(rgb(53, 177, 53) ,rgb(101, 226, 101)); */
+    background-color: white;
+    border-radius: 20px;
+    border: 0.1px solid darkgreen;
+}
